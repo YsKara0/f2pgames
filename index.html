@@ -1,0 +1,40 @@
+\index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Showcase</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Free Games Showcase</h1>
+        <div class="filters">
+            <select id="platformFilter">
+                <option value="all">All Platforms</option>
+                <option value="PC (Windows)">Windows</option>
+                <option value="Web Browser">Browser</option>
+            </select>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <!-- Categories will be populated by JavaScript -->
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <div class="loading">Loading games...</div>
+        <div class="games-container"></div>
+    </main>
+    
+    <footer>
+        <p>Data provided by <a href="https://www.freetogame.com/api/games" target="_blank">FreeToGame API</a></p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
